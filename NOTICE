@@ -8,6 +8,13 @@ advanced_ai_agents/multi_agent_apps/devpulse_ai                  -> agents/devpu
 advanced_ai_agents/multi_agent_apps/ai_codebase_migration_agent  -> agents/codebase-migration-planner
 advanced_ai_agents/multi_agent_apps/multi_agent_researcher       -> agents/hackernews-research-team
 advanced_ai_agents/autonomous_game_playing_agent_apps/ai_chess_agent -> agents/agent-chess-arena
+advanced_ai_agents/single_agent_apps/ai_deep_research_agent      -> agents/deep-research-agent
+advanced_ai_agents/single_agent_apps/ai_fraud_investigation_agent -> agents/fraud-investigation-agent
+advanced_ai_agents/multi_agent_apps/ai_negotiation_battle_simulator -> agents/negotiation-battle-simulator
+advanced_ai_agents/multi_agent_apps/multi_agent_trust_layer      -> agents/multi-agent-trust-layer
+advanced_ai_agents/single_agent_apps/ai_meeting_agent            -> agents/meeting-prep-crew
 
 Changes: directories renamed; unused `cairosvg` dependency removed from
-agent-chess-arena. See git history for later changes.
+agent-chess-arena; `ag-ui-protocol<1.0` pinned in
+negotiation-battle-simulator/backend/requirements.txt (ag-ui-adk fails to
+import against ag-ui-protocol 1.0.0). See git history for later changes.
