@@ -30,8 +30,8 @@ An advanced Chess game system where two AI agents play chess against each other 
 1. Clone the GitHub repository
 
 ```bash
-git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd advanced_ai_agents/autonomous_game_playing_agent_apps/ai_chess_agent
+git clone https://github.com/Supp3r-Man/agent-lab.git
+cd agent-lab/agents/agent-chess-arena
 ```
 2. Install the required dependencies:
 

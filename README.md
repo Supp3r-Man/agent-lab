@@ -1,9 +1,9 @@
 # Agent Lab
 
-Ten agent apps adapted from the open-source
-[awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) collection
-and collected in one place with a shared setup. The original code is by Shubham
-Saboo and contributors; see [Attribution](#attribution). Each one is a Streamlit
+Eleven agent apps: ten adapted from the open-source
+[awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) collection,
+and one original, collected in one place with a shared setup. The adapted code is by
+Shubham Saboo and contributors; see [Attribution](#attribution). Each one is a Streamlit
 app or a CLI. You bring your own API keys (OpenAI, Anthropic, Google, OpenRouter or Firecrawl, depending on the app). Nothing is stored.
 
 | Agent | What it does | Stack | Run |
@@ -17,6 +17,7 @@ app or a CLI. You bring your own API keys (OpenAI, Anthropic, Google, OpenRouter
 | [Negotiation Battle Simulator](agents/negotiation-battle-simulator) | Buyer and seller agents with different personalities negotiate in a live web UI. Needs a Google key. | Google ADK, Next.js | see its README |
 | [Multi-Agent Trust Layer](agents/multi-agent-trust-layer) | Identity, trust scores, scoped delegation and an audit trail for agent-to-agent calls. Runs without a key. | Python | `python multi_agent_trust_layer.py` |
 | [Career Coach with Memory](agents/career-coach-memory) | An orchestrator routes questions to resume, interview, skills and salary specialists. Mem0 and Qdrant remember each candidate across sessions. Needs one Google key. Its tool data is mock data. | Google ADK, Mem0 | `streamlit run adk_career_coach_agent_memory.py` |
+| [Repo Pulse Briefing](agents/repo-pulse-briefing) *(original)* | An always-on briefing on your own GitHub accounts: new stars, forks and issues since the last run, plus housekeeping nudges. Dry run by default, opt-in webhook delivery, fail-closed scheduler API. No key needed. | Python, optional ADK | `python -m repo_pulse --accounts you` |
 | [Meeting Prep Crew](agents/meeting-prep-crew) | A crew of agents that researches the people and context for a meeting. Needs Anthropic and Serper keys. | CrewAI | `streamlit run meeting_agent.py` |
 
 ## Quick start
@@ -34,7 +35,8 @@ The Meeting Prep Crew is hardcoded to an older Claude model id (`claude-3-5-sonn
 
 ## Attribution
 
-These apps are adapted from
+Repo Pulse Briefing is original work, released under the same Apache License 2.0. It borrows the
+shape of an awesome-llm-apps agent but none of its code. The other ten apps are adapted from
 [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) by
 Shubham Saboo and contributors, under the Apache License 2.0. See
 [NOTICE](NOTICE) and [LICENSE](LICENSE).

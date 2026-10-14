@@ -1,0 +1,5 @@
+# The core (reading GitHub, ranking, rendering, webhook delivery) uses only the standard library.
+# These are for the optional parts:
+fastapi>=0.115        # scheduler API (repo_pulse.api)
+uvicorn>=0.30         # to serve it
+google-adk>=1.0       # conversational wrapper (repo_pulse.agent)

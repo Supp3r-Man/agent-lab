@@ -1,0 +1,35 @@
+# TEMPLATE, not active. To use it, copy this file to .github/workflows/repo-pulse.yml in a repository.
+# It has not been run: check it in a test repository first.
+#
+# Runs the brief on a schedule using GitHub's own runners, so no server is needed. The baseline is kept
+# between runs with the Actions cache. The brief goes to the job summary. It is never sent anywhere
+# unless you add a webhook secret and the --send flag.
+name: repo-pulse
+on:
+  schedule:
+    - cron: "0 13 * * 1"   # Mondays 13:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  pulse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Restore the last snapshot
+        uses: actions/cache@v4
+        with:
+          path: .pulse-state.json
+          key: repo-pulse-state-${{ github.run_id }}
+          restore-keys: repo-pulse-state-
+      - name: Brief
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO_PULSE_ACCOUNTS: "your-account,your-other-account"   # EDIT ME
+        run: |
+          python -m repo_pulse --format markdown --state .pulse-state.json --save-state | tee -a "$GITHUB_STEP_SUMMARY"

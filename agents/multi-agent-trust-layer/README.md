@@ -32,7 +32,7 @@ Learn how to build a trust layer for multi-agent systems that enables secure del
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.9+
 - OpenAI API key (or any LLM provider)
 - Required Python packages (see `requirements.txt`)
 
@@ -40,8 +40,8 @@ Learn how to build a trust layer for multi-agent systems that enables secure del
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-   cd advanced_ai_agents/multi_agent_apps/multi_agent_trust_layer
+   git clone https://github.com/Supp3r-Man/agent-lab.git
+   cd agent-lab/agents/multi-agent-trust-layer
    ```
 
 2. Install the required packages:

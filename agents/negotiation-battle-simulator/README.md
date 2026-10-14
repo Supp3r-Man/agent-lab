@@ -59,8 +59,8 @@ Watch two AI agents battle it out in an epic used car negotiation! Built with **
 ### 1. Clone and Navigate
 
 ```bash
-git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd advanced_ai_agents/multi_agent_apps/ai_negotiation_battle_simulator
+git clone https://github.com/Supp3r-Man/agent-lab.git
+cd agent-lab/agents/negotiation-battle-simulator
 ```
 
 ### 2. Set Up Backend

@@ -18,8 +18,8 @@ An AI-powered autonomous fraud investigation agent that cross-references childca
 1. Clone the GitHub repository
 
 ```bash
-git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd advanced_ai_agents/single_agent_apps/ai_fraud_investigation_agent
+git clone https://github.com/Supp3r-Man/agent-lab.git
+cd agent-lab/agents/fraud-investigation-agent
 ```
 
 2. Install the required dependencies

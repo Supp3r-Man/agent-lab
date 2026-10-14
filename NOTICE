@@ -15,7 +15,10 @@ advanced_ai_agents/multi_agent_apps/multi_agent_trust_layer      -> agents/multi
 advanced_ai_agents/single_agent_apps/ai_meeting_agent            -> agents/meeting-prep-crew
 advanced_llm_apps/llm_apps_with_memory_tutorials/adk_career_coach_agent_memory -> agents/career-coach-memory
 
-Changes: directories renamed; unused `cairosvg` dependency removed from
+agents/repo-pulse-briefing is original and is not derived from awesome-llm-apps. It borrows only the
+idea of an always-on briefing agent (scout, rank, render, opt-in delivery).
+
+Changes to the adapted apps: directories renamed; unused `cairosvg` dependency removed from
 agent-chess-arena; `ag-ui-protocol<1.0` pinned in
 negotiation-battle-simulator/backend/requirements.txt (ag-ui-adk fails to
 import against ag-ui-protocol 1.0.0). See git history for later changes.

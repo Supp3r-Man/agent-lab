@@ -94,7 +94,8 @@ export MODEL_SYNTHESIS=gpt-4.1          # default, strongest
 ### Quick Verification (No API Key Required)
 
 ```bash
-cd advanced_ai_agents/multi_agent_apps/devpulse_ai
+git clone https://github.com/Supp3r-Man/agent-lab.git
+cd agent-lab/agents/devpulse-signal-intelligence
 python verify.py
 ```
 
