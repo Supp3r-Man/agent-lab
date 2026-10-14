@@ -1,0 +1,13 @@
+Agent Lab
+This repository contains modified copies of projects from
+https://github.com/Shubhamsaboo/awesome-llm-apps (Apache License 2.0),
+copied from commit 4bf51ab704fb2c5b3803cd5191b30d7dcdb51dc2.
+
+Original path                                                   -> Path here
+advanced_ai_agents/multi_agent_apps/devpulse_ai                  -> agents/devpulse-signal-intelligence
+advanced_ai_agents/multi_agent_apps/ai_codebase_migration_agent  -> agents/codebase-migration-planner
+advanced_ai_agents/multi_agent_apps/multi_agent_researcher       -> agents/hackernews-research-team
+advanced_ai_agents/autonomous_game_playing_agent_apps/ai_chess_agent -> agents/agent-chess-arena
+
+Changes: directories renamed; unused `cairosvg` dependency removed from
+agent-chess-arena. See git history for later changes.
