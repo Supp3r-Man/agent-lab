@@ -13,6 +13,7 @@ advanced_ai_agents/single_agent_apps/ai_fraud_investigation_agent -> agents/frau
 advanced_ai_agents/multi_agent_apps/ai_negotiation_battle_simulator -> agents/negotiation-battle-simulator
 advanced_ai_agents/multi_agent_apps/multi_agent_trust_layer      -> agents/multi-agent-trust-layer
 advanced_ai_agents/single_agent_apps/ai_meeting_agent            -> agents/meeting-prep-crew
+advanced_llm_apps/llm_apps_with_memory_tutorials/adk_career_coach_agent_memory -> agents/career-coach-memory
 
 Changes: directories renamed; unused `cairosvg` dependency removed from
 agent-chess-arena; `ag-ui-protocol<1.0` pinned in

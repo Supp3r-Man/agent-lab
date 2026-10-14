@@ -1,6 +1,6 @@
 # Agent Lab
 
-Nine agent apps adapted from the open-source
+Ten agent apps adapted from the open-source
 [awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) collection
 and collected in one place with a shared setup. The original code is by Shubham
 Saboo and contributors; see [Attribution](#attribution). Each one is a Streamlit
@@ -16,6 +16,7 @@ app or a CLI. You bring your own API keys (OpenAI, Anthropic, Google or Firecraw
 | [Fraud Investigation Agent](agents/fraud-investigation-agent) | Investigates a suspicious case with address checks and web evidence, and produces a structured report. | Agno | `streamlit run fraud_investigation_agent.py` |
 | [Negotiation Battle Simulator](agents/negotiation-battle-simulator) | Buyer and seller agents with different personalities negotiate in a live web UI. Needs a Google key. | Google ADK, Next.js | see its README |
 | [Multi-Agent Trust Layer](agents/multi-agent-trust-layer) | Identity, trust scores, scoped delegation and an audit trail for agent-to-agent calls. Runs without a key. | Python | `python multi_agent_trust_layer.py` |
+| [Career Coach with Memory](agents/career-coach-memory) | An orchestrator routes questions to resume, interview, skills and salary specialists. Mem0 and Qdrant remember each candidate across sessions. Needs one Google key. Its tool data is mock data. | Google ADK, Mem0 | `streamlit run adk_career_coach_agent_memory.py` |
 | [Meeting Prep Crew](agents/meeting-prep-crew) | A crew of agents that researches the people and context for a meeting. Needs Anthropic and Serper keys. | CrewAI | `streamlit run meeting_agent.py` |
 
 ## Quick start
