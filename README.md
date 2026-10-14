@@ -1,8 +1,10 @@
 # Agent Lab
 
-Four working multi-agent apps, collected in one place and run from one setup.
-Each one is a Streamlit app or a CLI. You bring your own OpenAI key. Nothing is
-stored.
+Four multi-agent apps adapted from the open-source
+[awesome-llm-apps](https://github.com/Shubhamsaboo/awesome-llm-apps) collection
+and collected in one place with a shared setup. The original code is by Shubham
+Saboo and contributors; see [Attribution](#attribution). Each one is a Streamlit
+app or a CLI. You bring your own OpenAI key. Nothing is stored.
 
 | Agent | What it does | Stack | Run |
 |---|---|---|---|
